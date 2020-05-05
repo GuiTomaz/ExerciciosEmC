@@ -2,9 +2,11 @@
 #include <stdlib.h>
 int main(void){
   int num, n = 0, totDivisores = 0, qtdNumeros = 0;
-  while(1){
+  do{
     printf("\n Informe um numero: ");
     scanf("%d",&num);
+    if( num == 0)
+      break;
     printf("Primos: ");
     while(qtdNumeros < num){
       for(int k = 1;k<=n;k++){
@@ -22,7 +24,8 @@ int main(void){
     qtdNumeros = 0;
     n= 0;
     totDivisores = 0;
-  }
+  }while(num > 0);
+
   return 0;
 }
 
