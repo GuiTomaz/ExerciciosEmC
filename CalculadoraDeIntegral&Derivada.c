@@ -3,15 +3,23 @@
 int* coletaCoeficiente(int g);
 void calculaIntegral(int g, int* coef);
 void calculaDerivada(int g, int* coef);
+void polinomioFornecido(int g, int* coef);
 int main(void){
   //Recebe o polinomio
   int g; //maior valor do polibomio
   int* coeficientes;
   printf("Informe o valor do maior grau do polinomio que quer integrar/derivar: (maior expoente) ");
   scanf("%d",&g);
-  coeficientes = coletaCoeficiente(g);
-  calculaIntegral(g, coeficientes);
-  calculaDerivada(g, coeficientes);
+  while(g > 0){
+    coeficientes = coletaCoeficiente(g);
+    polinomioFornecido(g, coeficientes);
+    calculaIntegral(g, coeficientes);
+    calculaDerivada(g, coeficientes);
+    printf("\n -----------------------------");
+    printf("\n Informe o valor do maior grau do polinomio que quer integrar/derivar: (maior expoente) ");
+    scanf("%d",&g);
+  }
+
   free(coeficientes);
   return 0;
 }
@@ -55,4 +63,12 @@ void calculaDerivada(int g, int* coef){
     printf("(%dx^%d) + ", derivada[x],x);
   }
   printf(" 0 ");
+}
+
+void polinomioFornecido(int g, int* coef){
+  printf("\nPolinomio fornecido: ");
+  for(int i = g;i>=0;i--){
+    printf("(%dx^%d) + ", coef[i],i);
+  }
+  printf(" 0 \n");
 }
