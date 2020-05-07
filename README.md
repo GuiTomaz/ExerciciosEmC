@@ -30,3 +30,8 @@ considerada um palíndromo). Você deve passar o número a ser testado. O seu pr
 imprimir as seguintes mensagens “VERDADEIRO” (caso o número seja um palíndromo) ou
 “FALSO” (caso o número não seja um palíndromo) na console. Seu programa para quando o
 número for negativo.
+
+## 5 - Conversor Binario
+Implemente um programa que, infinitamente, receba, como parâmetro de entrada, um número
+n e retorne a representação binária de n. Por exemplo, se n é igual a 12, a resposta deste
+programa deve ser “1100”. Seu programa para quando n for menor que zero.
