@@ -16,3 +16,9 @@ Alguns exercícios em C de listas da minha faculdade ou problemas interessantes 
   infinitamente: (a) receber o valor do maior grau g do polinômio, seguido de (g + 1) coeficientes; (b)
   calcular qual é a integral e a derivada do polinômio informado; e (c) imprimir os novos polinômios
   na tela. Este programa para somente quando o grau g do polinômio for menor ou igual a zero.
+
+## 3 - Verificador de Permutação de números
+Um número a é dito permutação de um número b se os dígitos de a formam uma permutação
+dos dígitos de b. Exemplo: 5412434 é uma permutação de 4321445, mas não é uma permutação
+de 4312455. Faça um programa que receba a e b e responda se a é permutação de b. Obs.:
+Considere que o dígito 0 (zero) não deve aparecer nos números.
