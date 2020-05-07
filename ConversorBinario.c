@@ -5,12 +5,17 @@ void exibeBinario(int* bin);
 int main(void){
   int num;
   int *binario;
+  printf("Insira um numero: ");
+  scanf("%d",&num);
   do{
-    printf("Insira um numero: ");
-    scanf("%d",&num);
+    if(num == 0){
+      printf("0");
+      break;
+    }
     binario = conversorBinario(num);
     exibeBinario(binario);
-
+    printf("Insira um numero: ");
+    scanf("%d",&num);
   }while(num>=0);
   free(binario);
   return 0;
