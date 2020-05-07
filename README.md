@@ -22,3 +22,11 @@ Um número a é dito permutação de um número b se os dígitos de a formam uma
 dos dígitos de b. Exemplo: 5412434 é uma permutação de 4321445, mas não é uma permutação
 de 4312455. Faça um programa que receba a e b e responda se a é permutação de b. Obs.:
 Considere que o dígito 0 (zero) não deve aparecer nos números.
+
+## 4 - Verificador de Palindromos
+Implemente um programa que, infinitamente, teste se um número é um palíndromo (Dica: se
+uma palavra pode ser lida, indiferentemente, da esquerda para a direita e vice-versa, ela é
+considerada um palíndromo). Você deve passar o número a ser testado. O seu programa deverá
+imprimir as seguintes mensagens “VERDADEIRO” (caso o número seja um palíndromo) ou
+“FALSO” (caso o número não seja um palíndromo) na console. Seu programa para quando o
+número for negativo.
