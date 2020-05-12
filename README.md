@@ -45,3 +45,12 @@ letras por predecessoras do alfabeto, trocando maiúsculas por minúsculas. Por 
   ```
 A letra ‘a’ deve ser substituída por ‘Z’ (e ‘A’ por ‘z’). Caracteres que não
 forem letras devem ser substituídos por ‘!’. Sabe-se que A = 65, Z = 90, a = 97 e z = 122.
+
+## 7 - Codifica Palavras II
+Implemente uma função em C que receba uma string como parâmetro e retorne a string com
+todos os caracteres(neste caso, apenas vogais) minúsculos substituídos pelo caracter ‘?’. Por exemplo, se for passada a string
+“Palavra-Teste-123”, a função deve retornar a string “P?l?vr?-T?st?-123”. A assinatura desta função
+deve ser:
+``` 
+  void codifica (char *str)
+```
