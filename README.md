@@ -41,7 +41,7 @@ Implemente uma função em C que receba uma string como parâmetro e substitua t
 letras por predecessoras do alfabeto, trocando maiúsculas por minúsculas. Por exemplo, a string
 “Amor” seria alterada para “zLNQ”. Esta função deve obedecer o seguinte protótipo:
   ```
-  void  shift_troca_string (char *str)
+  void  shift_troca_string (char *str);
   ```
 A letra ‘a’ deve ser substituída por ‘Z’ (e ‘A’ por ‘z’). Caracteres que não
 forem letras devem ser substituídos por ‘!’. Sabe-se que A = 65, Z = 90, a = 97 e z = 122.
@@ -52,5 +52,15 @@ todos os caracteres(neste caso, apenas vogais) minúsculos substituídos pelo ca
 “Palavra-Teste-123”, a função deve retornar a string “P?l?vr?-T?st?-123”. A assinatura desta função
 deve ser:
 ``` 
-  void codifica (char *str)
+  void codifica (char *str);
+```
+
+## 8 - Retira Sufixo
+Escreva uma função que receba, como entrada, uma cadeia de caracteres s e um inteiro n, e,
+em seguida, retire o "prefixo" da cadeia s de tamanho n (isto é, retire os n primeiros caracteres). Se a
+cadeia não tiver pelo menos n caracteres, deve ser impressa a mensagem "erro". Por exemplo, se s =
+"abcdefghi" e n = 3, então a cadeia "defghi" deve ser impressa; com a mesma cadeia s e n = 17,
+deve ser impresso "erro". O protótipo desta função é o seguinte:
+```
+void retira_inicio_n (char *str, int n);
 ```
