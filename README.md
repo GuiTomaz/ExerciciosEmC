@@ -55,7 +55,7 @@ deve ser:
   void codifica (char *str);
 ```
 
-## 8 - Retira Sufixo
+## 8 - Retira Prefixo
 Escreva uma função que receba, como entrada, uma cadeia de caracteres s e um inteiro n, e,
 em seguida, retire o "prefixo" da cadeia s de tamanho n (isto é, retire os n primeiros caracteres). Se a
 cadeia não tiver pelo menos n caracteres, deve ser impressa a mensagem "erro". Por exemplo, se s =
