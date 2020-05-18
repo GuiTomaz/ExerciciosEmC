@@ -64,3 +64,8 @@ deve ser impresso "erro". O protótipo desta função é o seguinte:
 ```
 void retira_inicio_n (char *str, int n);
 ```
+## 9 - Encontra Sub String
+Escreva um programa que receba duas strings, como parâmetros de entrada, e informe qual é a
+maior substring existente nas duas strings. Por exemplo, se as strings de entrada são
+ACCTGAACTCCCCCC e ACCTAGGACCCCCC, então a maior substring existente entre as duas
+strings será CCCCCC.
