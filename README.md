@@ -69,3 +69,10 @@ Escreva um programa que receba duas strings, como parâmetros de entrada, e info
 maior substring existente nas duas strings. Por exemplo, se as strings de entrada são
 ACCTGAACTCCCCCC e ACCTAGGACCCCCC, então a maior substring existente entre as duas
 strings será CCCCCC.
+
+## 10 - String Contida
+Escreva uma função que dadas duas strings, retorne UM se a primeira contém a segunda,
+ignorando maiúsculas e minúsculas, e ZERO, caso contrário. O protótipo da função é o seguinte:
+```
+int cic (char *str1, char *str2)
+```
