@@ -13,6 +13,8 @@ void ordena(char** L, int totConj);
 void copy(char*orig, char*dest);
 void trocaString(char* s1, char* s2);
 int encontreMaiorSub(char** L1, char** L2, int tamMaiorSub, int tamMenorSub);
+
+
 int main() {
   char s[30];
   int totElementosString;
@@ -51,6 +53,10 @@ int main() {
     }
 
   }
+  for(int i =0;i<maxSubConj;i++){
+  	free(L[i]);
+  }
+  free(L);
   return 0;
 }
 int encontreMaiorSub(char** L1, char** L2, int tamMaiorSub, int tamMenorSub){
