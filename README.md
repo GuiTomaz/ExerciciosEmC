@@ -76,3 +76,10 @@ ignorando maiúsculas e minúsculas, e ZERO, caso contrário. O protótipo da fu
 ```
 int cic (char *str1, char *str2)
 ```
+
+## 11 - Strings Iguais
+Escreva uma função que dadas duas strings, retorne UM se as strings são iguais, ignorando
+maiúsculas e minúsculas, e ZERO, caso contrário. O protótipo da função é o seguinte:
+```
+int igual (char*str1, char *str2)
+```
