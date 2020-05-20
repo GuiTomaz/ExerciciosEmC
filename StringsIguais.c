@@ -2,15 +2,16 @@
 #include <stdlib.h>
 #include <string.h>
 /*
-  Aproveitando a funcao  compara criada no problema "String contida", podemos resolver este problema facilmente.
+  Aproveitando a funcao  "compara" criada no problema "String contida", apenas mudando o seu nome para atender ao objetivo do problema,
+  podemos soluciona-lo facilmente.
 */
-int compara(char* str1, char* str2);
+int igual(char* str1, char* str2);
 int main() {
   char str1[30];
   char str2[30];
   scanf("%[^\n]%*c", str1);
   scanf("%[^\n]%*c", str2);
-  if(compara(str1, str2) == 1){
+  if(igual(str1, str2) == 1){
     printf("As strings sao iguais\n");
   }else{
     printf("As strings sao diferentes\n");
@@ -20,7 +21,7 @@ int main() {
 }
 
 
-int compara(char* str1, char* str2){
+int igual(char* str1, char* str2){
   int i =0;
   if(strlen(str1) != strlen(str2)){
     return 0; // se possuem tamanhos diferentes, certamente serao diferentes
